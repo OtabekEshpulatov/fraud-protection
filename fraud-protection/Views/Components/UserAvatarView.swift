@@ -4,16 +4,15 @@
 //
 //  Created by kebato OS on 05/12/24.
 //
-UserAvatar
+
 import SwiftUI
 
-
- struct UserAvatar: View {
+ public struct UserAvatarView: View {
     
        var image: Image
        var size: CGFloat = 60
-     
-       var body: some View {
+    
+    public var body: some View {
            image.resizable()
                .scaledToFit()
                .clipShape(Circle())
@@ -22,5 +21,5 @@ import SwiftUI
    }
 
 #Preview {
-    UserAvatar(image: Image("userImage"))
+    UserAvatarView(image: Image("userImage"))
 }

@@ -6,21 +6,27 @@
 //
 import SwiftUI
 
-public struct HomeBody: View{
+public struct HomeBodyView: View{
     
     @StateObject
     public var viewModel: HomeBodyViewModel = HomeBodyViewModel()
-    
+
     public var body: some View{
 
-        NavigationStack{
-            List{
-                ForEach(viewModel.searchResults, id: \.self){ article in
-                    Text(article.title)
-                        .padding()
-                }
-            }
-        }.searchable(text: $viewModel.searchText)
-            .background(Color.red)
+    
+                List{
+                    ForEach(viewModel.articles, id: \.self){ article in
+                        NavigationLink(destination:LazyView(ArticleDetailView(article: article).padding())){
+                        ArticleLabelView(article: article)
+                        }
+                    }
+                    
+                }.listStyle(PlainListStyle())
+        }
     }
+
+
+
+#Preview {
+    HomeBodyView()
 }

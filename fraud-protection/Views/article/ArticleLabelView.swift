@@ -13,13 +13,23 @@ struct ArticleLabelView: View{
     
     var body: some View{
         HStack{
-            if article.previewImagePath != ""{
-                Image(article.previewImagePath)
-                    .resizable()
-                    .scaledToFit()
+            ArticleLabelImage(imagePath: article.previewImagePath ?? "no-image")
+            VStack(spacing: 20){
+                Text(article.title).fontWeight(.medium).font(.system(size: 14))
+                    .lineLimit(4)
+                
+                HStack{
+                    if !isEmpty(article.createdAt){
+                        Text(String(dayDifference(article.createdAt,Date()))+" days ago")
+                    }
+                }
+                .fontWeight(.regular).font(.system(size: 10))
+                .foregroundColor(colorFromHex("7D7B7B"))
+                .frame(alignment: .leading)
             }
-            Text(article.title).padding()
         }
     }
+    
+   
 }
 
