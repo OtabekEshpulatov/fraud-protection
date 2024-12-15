@@ -22,7 +22,6 @@ struct ContentView: View {
                       .padding([.bottom,.trailing],10)
                     Text("lcd-report-fraud-incident")
                 }
-      
             
             UserSettingsView().tabItem{
                 Image(systemName: "gear")

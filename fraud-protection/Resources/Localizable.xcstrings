@@ -1,51 +1,159 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Description" : {
-
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
     },
-    "Fraud Incident Report" : {
-
-    },
-    "Full name" : {
-
-    },
-    "greeting" : {
+    "lcd-app-settings" : {
+      "comment" : "App Settings",
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hello"
+            "value" : "App Settings"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Привет"
+            "value" : "Настройки приложения"
           }
         },
         "uz" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Assalomu alaykum"
+            "value" : "Ilova sozlamalari"
           }
         },
         "uz-Cyrl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ассалому алайкум"
+            "value" : "Илова Созламалари"
           }
         }
       }
     },
-    "lcd-fullName" : {
+    "lcd-app-theme" : {
+      "comment" : "App Themes",
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Full name"
+            "value" : "Theme"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тема"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fon"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фон"
+          }
+        }
+      }
+    },
+    "lcd-dark-theme" : {
+      "comment" : "Dark Theme",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темный"
+          }
+        }
+      }
+    },
+    "lcd-days-ago" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "days ago"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "дней назад"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kun oldin"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "кун олдин"
+          }
+        }
+      }
+    },
+    "lcd-description" : {
+      "comment" : "Description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Описание"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavsif"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тавсиф"
+          }
+        }
+      }
+    },
+    "lcd-full-name" : {
+      "comment" : "Full Name",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Name"
           }
         },
         "ru" : {
@@ -57,7 +165,13 @@
         "uz" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "To’liq ism"
+            "value" : "To’liq Ism"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тўлиқ Исм"
           }
         }
       }
@@ -99,6 +213,52 @@
             "state" : "translated",
             "value" : "Latest Frauds"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последние мошенничества"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So’ngi fribgarliklar"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сўнги фрибгарликлар"
+          }
+        }
+      }
+    },
+    "lcd-light-theme" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Енгил"
+          }
+        }
+      }
+    },
+    "lcd-more" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "more"
+          }
         }
       }
     },
@@ -131,31 +291,118 @@
         }
       }
     },
+    "lcd-personal-info" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personal Information"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Персональная информация"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shaxsiy ma'lumot"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шахсий Маълумотлар"
+          }
+        }
+      }
+    },
+    "lcd-phone-number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone Number"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номер телефона"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefon raqam"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Телефон Рақам"
+          }
+        }
+      }
+    },
     "lcd-report-fraud-incident" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Report Fraud!"
+            "value" : "Report Fraud"
           }
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Сообщить!"
+            "state" : "translated",
+            "value" : "Сообщить"
           }
         },
         "uz" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Xabar bar!"
+            "state" : "translated",
+            "value" : "Xabar ber"
           }
         },
         "uz-Cyrl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Хабар бер!"
+            "state" : "translated",
+            "value" : "Хабар бер"
+          }
+        }
+      }
+    },
+    "lcd-report-submitted-success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your report has been submitted successfully. Thank you!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша заявка успешно отправлена. Спасибо!"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sizning arizangiz muvaffaqiyatli topshirildi. Rahmat!"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сизнинг аризангиз муваффақиятли топширилди. Раҳмат!"
           }
         }
       }
@@ -179,6 +426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saqlash"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сақлаш"
           }
         }
       }
@@ -241,17 +494,61 @@
         }
       }
     },
-    "Phone number" : {
-
+    "lcd-submit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Submit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отправка"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jo’natish"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жўнатиш"
+          }
+        }
+      }
     },
-    "Submit" : {
-
-    },
-    "Title" : {
-
-    },
-    "Your report has been submitted successfully. Thank you!" : {
-
+    "lcd-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заголовок"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarlavha"
+          }
+        },
+        "uz-Cyrl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сарлавҳа"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

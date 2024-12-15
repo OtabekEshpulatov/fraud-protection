@@ -22,6 +22,6 @@ public struct HomeView: View {
 }
 
 
-#Preview {
+#Preview { 
     HomeView()
 }

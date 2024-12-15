@@ -7,11 +7,14 @@
 import Foundation
 
 public struct UserSettings:AbstractModelProtocol {
-    
+        
     public var id: UUID
     
     public var fullName: String?
     public var phoneNumber: String?
     public var locale: AppLocale? = AppLocale.from(Locale.current.identifier)
+    public var theme: AppThemes? = AppThemes.from(deviceColorScheme ?? AppThemes.light.rawValue)
 }
+
+
 

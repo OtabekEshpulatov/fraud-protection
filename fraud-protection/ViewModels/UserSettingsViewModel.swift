@@ -14,9 +14,9 @@ public class UserSettingsViewModel: ObservableObject {
     @Published var fullName: String
     @Published var phoneNumber: String
     @Published var locale: AppLocale
+    @Published var theme: AppThemes
     
-    public func saveLanguage(_ language: AppLocale) {
-      }
+    public func saveLanguage(_ language: AppLocale) {}
     
     init() {
         let loadedSettings = UserSettingsViewModel.loadSettings()
@@ -30,9 +30,11 @@ public class UserSettingsViewModel: ObservableObject {
         fullName = loadedSettings.fullName ?? ""
         phoneNumber = loadedSettings.phoneNumber ?? ""
         locale = loadedSettings.locale ?? AppLocale.english
+        theme = loadedSettings.theme ?? AppThemes.from(deviceColorScheme ?? "") ?? AppThemes.light
     
         settings = loadedSettings
     }
+    
     
     
     func saveSettings(){
@@ -41,7 +43,8 @@ public class UserSettingsViewModel: ObservableObject {
                 id: UUID(),
                 fullName: self.fullName,
                 phoneNumber: self.phoneNumber,
-                locale: self.locale
+                locale: self.locale,
+                theme: self.theme
             )
             
             let data = try JSONEncoder().encode(updatedSettings)

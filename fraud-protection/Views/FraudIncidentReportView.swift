@@ -15,7 +15,7 @@ public struct FraudIncidentReportView: View {
     public var body: some View {
         
         if viewModel.submitted {
-            Text("Your report has been submitted successfully. Thank you!")
+            Text("lcd-report-submitted-success")
         }else{
             incidentReportView
         }
@@ -24,29 +24,34 @@ public struct FraudIncidentReportView: View {
     }
     
      var incidentReportView: some View{
-         Form{
-             if(!isEmpty(viewModel.errorMessage)){
-                 Text(viewModel.errorMessage).foregroundColor(.red)
-             }
-             
-                TextField("Full name", text: $viewModel.fullName)
-                TextField("Phone number", text: $viewModel.phoneNumber)
-                TextField("Title", text: $viewModel.title)
-                TextField("Description",text:$viewModel.description,axis: .vertical)
+         VStack{
+             Form{
+                 if(!isEmpty(viewModel.errorMessage)){
+                     Text(viewModel.errorMessage).foregroundColor(.red)
+                 }
+        
+                    TextField("lcd-full-name", text: $viewModel.fullName)
+                    TextField("lcd-phone-number", text: $viewModel.phoneNumber)
+                    TextField("lcd-title", text: $viewModel.title)
+                    TextField("lcd-description",text:$viewModel.description,axis: .vertical)
 
+                    
+                    Section {
+                        Button {
+                            viewModel.submit()
+                        }label: {
+                            Text("lcd-submit")
+                                .frame(maxWidth: .infinity)
+                                .buttonStyle(.borderedProminent)
+                        }
                 
-                Section {
-                    Button {
-                        viewModel.submit()
-                    }label: {
-                        Text("Submit")
-                            .frame(maxWidth: .infinity)
-                            .buttonStyle(.borderedProminent)
-                    }
-            
-            }
-         }.autocorrectionDisabled()
-         .navigationTitle("Fraud Incident Report")
-         .navigationBarTitleDisplayMode(.automatic)
+                }
+             }.autocorrectionDisabled()
+         }
+    
     }
+}
+
+#Preview {
+    FraudIncidentReportView()
 }

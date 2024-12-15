@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B88F6B7F2D0F6D2100194792 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B88F6B7E2D0F6D2100194792 /* iPhoneNumberField */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B8EF77532D01FB04006BA91D /* fraud-protection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fraud-protection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88F6B7F2D0F6D2100194792 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "fraud-protection";
 			packageProductDependencies = (
+				B88F6B7E2D0F6D2100194792 /* iPhoneNumberField */,
 			);
 			productName = "fraud-protection";
 			productReference = B8EF77532D01FB04006BA91D /* fraud-protection.app */;
@@ -97,6 +103,9 @@
 			);
 			mainGroup = B8EF774A2D01FB04006BA91D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B88F6B7D2D0F6D2100194792 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B8EF77542D01FB04006BA91D /* Products */;
 			projectDirPath = "";
@@ -333,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B88F6B7D2D0F6D2100194792 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B88F6B7E2D0F6D2100194792 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B88F6B7D2D0F6D2100194792 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8EF774B2D01FB04006BA91D /* Project object */;
 }

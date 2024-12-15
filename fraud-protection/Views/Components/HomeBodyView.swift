@@ -12,13 +12,15 @@ public struct HomeBodyView: View{
     public var viewModel: HomeBodyViewModel = HomeBodyViewModel()
 
     public var body: some View{
-
-    
                 List{
                     ForEach(viewModel.articles, id: \.self){ article in
-                        NavigationLink(destination:LazyView(ArticleDetailView(article: article).padding())){
-                        ArticleLabelView(article: article)
+                       
+                        if !isEmpty(article.previewImagePath){
+                            StandardArticleLabelView(article: article)
+                        }else{
+                            SimpleArticleLabelView(article: article)
                         }
+                       
                     }
                     
                 }.listStyle(PlainListStyle())

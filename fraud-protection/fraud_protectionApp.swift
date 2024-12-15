@@ -12,9 +12,14 @@ import SwiftData
 struct fraud_protectionApp: App {
     
 
+    @StateObject private var userSettings = UserSettingsViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userSettings)
+                .environment(\.locale, userSettings.locale.locale)
+                .environment(\.colorScheme, userSettings.theme.colorScheme)
         }
     }
 }
