@@ -11,6 +11,9 @@
         }
       }
     },
+    "empty" : {
+
+    },
     "lcd-app-settings" : {
       "comment" : "App Settings",
       "extractionState" : "manual",
@@ -176,6 +179,17 @@
         }
       }
     },
+    "lcd-help-us-report" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Help us by reporting any fraudulent incidents you’ve seen"
+          }
+        }
+      }
+    },
     "lcd-language" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -290,6 +304,9 @@
           }
         }
       }
+    },
+    "lcd-ok" : {
+
     },
     "lcd-personal-info" : {
       "extractionState" : "manual",
@@ -549,6 +566,9 @@
           }
         }
       }
+    },
+    "No result :(" : {
+
     }
   },
   "version" : "1.0"

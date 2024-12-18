@@ -9,13 +9,9 @@ import SwiftUI
 
 public struct HomeHeaderView: View {
     
+    @State var searching: Bool = false
     public var body: some View {
         
-        HStack{
-            Spacer()
-            Text("lcd-latest-frauds").font(.headline)
-            Spacer()
-            Image(systemName: "magnifyingglass").padding([.trailing],15)
-        }
+   Text("empty")
     }
 }

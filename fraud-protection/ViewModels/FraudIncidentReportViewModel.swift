@@ -15,14 +15,23 @@ public class FraudIncidentReportViewModel: ObservableObject {
     @Published var phoneNumber: String = ""
     
     @Published var errorMessage: String = ""
-    @Published var submitted: Bool = false
 
     
-    func submit(){
+    func clearSubmit(){
+        errorMessage = ""
+        title = ""
+        description = ""
+        phoneNumber = ""
+        fullName = ""
+    }
+    
+    func submit()-> Bool{
         if(validate()){
             // call to API
-            submitted = true
+            return true
         }
+        
+        return false
     }
     
     func validate() -> Bool{
@@ -30,8 +39,7 @@ public class FraudIncidentReportViewModel: ObservableObject {
             errorMessage = "Full Name is required"
             return false
         }
-        if !isFullUzNumber(phoneNumber)
-            || !isShortUzNumber(phoneNumber){
+        if isEmpty(phoneNumber){
             errorMessage = "Invalid phone number"
             return false
         }

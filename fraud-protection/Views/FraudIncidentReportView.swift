@@ -11,21 +11,19 @@ public struct FraudIncidentReportView: View {
     @StateObject
     public var viewModel: FraudIncidentReportViewModel = FraudIncidentReportViewModel()
     
+    @State private var reportSubmitted = false
     
     public var body: some View {
-        
-        if viewModel.submitted {
-            Text("lcd-report-submitted-success")
-        }else{
-            incidentReportView
-        }
-      
-        
+        incidentReportView
     }
     
      var incidentReportView: some View{
          VStack{
+            
              Form{
+                 Text("lcd-help-us-report")
+                     .font(.headline).padding()
+                 
                  if(!isEmpty(viewModel.errorMessage)){
                      Text(viewModel.errorMessage).foregroundColor(.red)
                  }
@@ -38,8 +36,10 @@ public struct FraudIncidentReportView: View {
                     
                     Section {
                         Button {
-                            viewModel.submit()
-                        }label: {
+                            if viewModel.submit(){
+                                reportSubmitted = true
+                            }
+                        }label:{
                             Text("lcd-submit")
                                 .frame(maxWidth: .infinity)
                                 .buttonStyle(.borderedProminent)
@@ -47,8 +47,11 @@ public struct FraudIncidentReportView: View {
                 
                 }
              }.autocorrectionDisabled()
-         }
-    
+         }.alert("lcd-report-submitted-success", isPresented: $reportSubmitted){
+             Button("lcd-ok", role: .cancel) {
+                     viewModel.clearSubmit()
+        }
+        }
     }
 }
 

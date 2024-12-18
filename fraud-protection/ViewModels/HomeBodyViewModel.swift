@@ -11,15 +11,23 @@ public class HomeBodyViewModel: ObservableObject {
     
     
     @Published var searchText: String = ""
-    
+    @Published var searching: Bool = false
     @Published var articles: [Article] = staticArticles
+    
+    var emptySearch: Bool{
+       return searchResults.isEmpty
+    }
     
     var searchResults: [Article] {
         if searchText.isEmpty {
+            
             return articles
         }
-        return articles.filter{$0.title.lowercased().contains(searchText.lowercased())}
+        var articles  = staticArticles.filter{$0.title.lowercased().contains(searchText.lowercased())}
+        return articles
     }
+    
+    
     
 
     
