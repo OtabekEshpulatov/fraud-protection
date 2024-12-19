@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87AC1822D14385F00623BAC /* Fraud Shield.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B87AC1812D14385F00623BAC /* Fraud Shield.pdf */; };
 		B88F6B7F2D0F6D2100194792 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = B88F6B7E2D0F6D2100194792 /* iPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8EF77532D01FB04006BA91D /* fraud-protection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fraud-protection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87AC1812D14385F00623BAC /* Fraud Shield.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Fraud Shield.pdf"; sourceTree = "<group>"; };
+		B8EF77532D01FB04006BA91D /* Fraud Shield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fraud Shield.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +39,7 @@
 		B8EF774A2D01FB04006BA91D = {
 			isa = PBXGroup;
 			children = (
+				B87AC1812D14385F00623BAC /* Fraud Shield.pdf */,
 				B8EF77552D01FB04006BA91D /* fraud-protection */,
 				B8EF77542D01FB04006BA91D /* Products */,
 			);
@@ -45,7 +48,7 @@
 		B8EF77542D01FB04006BA91D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8EF77532D01FB04006BA91D /* fraud-protection.app */,
+				B8EF77532D01FB04006BA91D /* Fraud Shield.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +56,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8EF77522D01FB04006BA91D /* fraud-protection */ = {
+		B8EF77522D01FB04006BA91D /* Fraud Shield */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8EF77632D01FB05006BA91D /* Build configuration list for PBXNativeTarget "fraud-protection" */;
+			buildConfigurationList = B8EF77632D01FB05006BA91D /* Build configuration list for PBXNativeTarget "Fraud Shield" */;
 			buildPhases = (
 				B8EF774F2D01FB04006BA91D /* Sources */,
 				B8EF77502D01FB04006BA91D /* Frameworks */,
@@ -68,12 +71,12 @@
 			fileSystemSynchronizedGroups = (
 				B8EF77552D01FB04006BA91D /* fraud-protection */,
 			);
-			name = "fraud-protection";
+			name = "Fraud Shield";
 			packageProductDependencies = (
 				B88F6B7E2D0F6D2100194792 /* iPhoneNumberField */,
 			);
 			productName = "fraud-protection";
-			productReference = B8EF77532D01FB04006BA91D /* fraud-protection.app */;
+			productReference = B8EF77532D01FB04006BA91D /* Fraud Shield.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8EF77522D01FB04006BA91D /* fraud-protection */,
+				B8EF77522D01FB04006BA91D /* Fraud Shield */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87AC1822D14385F00623BAC /* Fraud Shield.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8EF77632D01FB05006BA91D /* Build configuration list for PBXNativeTarget "fraud-protection" */ = {
+		B8EF77632D01FB05006BA91D /* Build configuration list for PBXNativeTarget "Fraud Shield" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8EF77642D01FB05006BA91D /* Debug */,
