@@ -58,9 +58,7 @@ You can view the [Fraud Shield Presentation](./fraud-protection-presentation.pdf
 
 ## Demo Video
 
-Watch the demo of Fraud Shield on [YouTube](https://youtube.com/shorts/FKqLLfIL4fs?si=IHUfBo-qSrJK4zOh) or embedded below:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FKqLLfIL4fs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Watch the demo of Fraud Shield on [YouTube](https://youtube.com/shorts/FKqLLfIL4fs?si=IHUfBo-qSrJK4zOh)
 
 ## License
 
